@@ -34,11 +34,58 @@ public class ReversePalindromeTest
 	}
 
 	@Test
-	public void testGetFileName() {
+	public void testIsPalindromeNormal() {
 
-		//assertEquals(
-		//		"File name extraction failed. File name can be found after a space after from clause. Note: CSV file can contain a field that contains from as a part of the column name. For eg: from_date,from_hrs etc",
-		//		"ipl.csv", reversePalindrome.getFileName("select city,winner,team1,team2 from ipl.csv"));
+		assertTrue(
+				"Check if string is a palindrome for general case", reversePalindrome.isPalindrome("abba"));
+
+	}
+	
+	@Test
+	public void testIsNotPalindrome() {
+
+		assertFalse(
+				"Check if string is a palindrome in case value of string is null", reversePalindrome.isPalindrome("abb"));
+
+	}
+	
+	@Test
+	public void testIsPalindromeOneChar() {
+
+		assertTrue(
+				"Check if string is a palindrome  in case there is only one char", reversePalindrome.isPalindrome("a"));
+
+	}
+	
+	@Test
+	public void testIsPalindromeNull() {
+
+		assertNull(
+				"Check if string is a palindrome in case value of string is null", reversePalindrome.isPalindrome(null));
+
+	}
+	
+	@Test
+	public void testReverseStringNormal() {
+
+		assertEquals(
+				"Return reverse string for general case", "cabba", reversePalindrome.reverseString("abbac"));
+
+	}
+	
+	@Test
+	public void testReverseStringOneChar() {
+
+		assertEquals(
+				"Return reverse string for one case", "a", reversePalindrome.reverseString("a"));
+
+	}
+	
+	@Test
+	public void testReverseStringNull() {
+
+		assertNull(
+				"Return null for null string", reversePalindrome.reverseString(null));
 
 	}
     
