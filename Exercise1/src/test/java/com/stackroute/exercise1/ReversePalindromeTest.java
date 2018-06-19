@@ -1,9 +1,6 @@
 package com.stackroute.exercise1;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -45,7 +42,7 @@ public class ReversePalindromeTest
 	public void testIsNotPalindrome() {
 
 		assertFalse(
-				"Check if string is a palindrome in case value of string is null", reversePalindrome.isPalindrome("abb"));
+				"Check if string is a palindrome in case if it is not a palindrome", reversePalindrome.isPalindrome("abb"));
 
 	}
 	
@@ -60,7 +57,7 @@ public class ReversePalindromeTest
 	@Test
 	public void testIsPalindromeNull() {
 
-		assertNull(
+		assertFalse(
 				"Check if string is a palindrome in case value of string is null", reversePalindrome.isPalindrome(null));
 
 	}
