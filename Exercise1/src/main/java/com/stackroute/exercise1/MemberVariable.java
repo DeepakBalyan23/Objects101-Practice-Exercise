@@ -1,16 +1,14 @@
 package com.stackroute.exercise1;
 
+import java.math.BigDecimal;
+
+/*Member variable class to initialize Member class*/
+
 public class MemberVariable {
 
-	public String getName(Member member) {
-		return member.name;
-	}
+	/*createMemberInstance() creates an object of Member class and return that object*/
 	
-	public int getAge(Member member) {
-		return member.age;
-	}
-	
-	public String getSalary(Member member) {
-		return member.salary+"";
+	public Member createMemberInstance(String name, int age, BigDecimal salary) {
+		return new Member(name, age, salary);
 	}
 }

@@ -9,16 +9,16 @@ import org.junit.Test;
 /**
  * Unit test for simple ReversePalindrome.
  */
-public class PowerOfFourTest 
+public class PowerOfFourCheckerTest 
 {
 	
-	private static PowerOfFour powerOfFour;
+	private static PowerOfFourChecker powerOfFour;
 
 	@BeforeClass
 	public static void setup() {
 		// This methods runs, before running any one of the test case
 		// This method is used to initialize the required variables
-		powerOfFour = new PowerOfFour();
+		powerOfFour = new PowerOfFourChecker();
 
 	}
 
