@@ -49,14 +49,11 @@ public class EvenNumTestTest
 
 	}
     
-	@Test
-	public void testIsNotEven() {
+	@Test(expected=NumberFormatException.class)
+	public void testThrowsExceptionIfNotNumber() {
 		
-		try {
-			assertFalse("Is not an even number", evenNumTest.isEven("13"));
-		} catch (Exception e) {
-			assertEquals("java.lang.NumberFormatException", e.toString().split(":")[0]);
-		}
+			assertTrue("Is not an even number", evenNumTest.isEven("abc"));
+	
 
 	}
 }
