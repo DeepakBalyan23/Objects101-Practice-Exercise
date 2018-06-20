@@ -8,16 +8,16 @@ import org.junit.Test;
 
 /* Unit test for EvenNumTest
  */
-public class EvenNumTestTest 
+public class EvenNumCheckerTest 
 {
 	
-	private static EvenNumTest evenNumTest;
+	private static EvenNumChecker evenNumTest;
 
 	@BeforeClass
 	public static void setup() {
 		// This methods runs, before running any one of the test case
 		// This method is used to initialize the required variables
-		evenNumTest = new EvenNumTest();
+		evenNumTest = new EvenNumChecker();
 
 	}
 

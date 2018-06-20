@@ -2,7 +2,7 @@ package com.stackroute.exercise1;
 
 /*EvenNumTest Class is to test if the number is even or odd*/
 
-public class EvenNumTest {
+public class EvenNumChecker {
 
 	/*isEven() function return true if it is even and return false if it is not even*/
 	
