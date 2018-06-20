@@ -31,29 +31,16 @@ public class EvenNumTestTest
 	
 	@Test
 	public void testIsEven() {
-		try {
-			assertTrue("Is a even number", evenNumTest.isEven("20"));
-		} catch (Exception e) {
-			assertEquals("java.lang.NullPointerException", e.toString().split(":")[0]);
-		}
-
+		assertTrue(evenNumTest.isEven("20"));
 	}
 	
 	@Test
-	public void testIsEvenWithNumberFormatException() {
-		try {
-			assertTrue("Is a even number", evenNumTest.isEven("20a"));
-		} catch (Exception e) {
-			assertEquals("java.lang.NumberFormatException", e.toString().split(":")[0]);
-		}
-
+	public void testIsNotEven() {
+		assertFalse(evenNumTest.isEven("21"));
 	}
     
 	@Test(expected=NumberFormatException.class)
 	public void testThrowsExceptionIfNotNumber() {
-		
-			assertTrue("Is not an even number", evenNumTest.isEven("abc"));
-	
-
+		evenNumTest.isEven("abc");
 	}
 }

@@ -32,47 +32,18 @@ public class PowerOfFourCheckerTest
 
 	@Test
 	public void testIsPowerOfFour() {
-
-		try {
-			assertTrue("Return true if number is a power of 4", powerOfFour.isPowerOfFour("64"));
-		} catch (Exception e) {
-			assertEquals("java.lang.NumberFormatException", e.toString().split(":")[0]);
-		}
-
+		assertTrue("Return true if number is a power of 4", powerOfFour.isPowerOfFour("64"));
 	}
 	
 	@Test
 	public void testIsNotPowerOfFour() {
-
-		try {
 			assertFalse("Return false if number is not a power of 4", powerOfFour.isPowerOfFour("128"));
-		} catch (Exception e) {
-			assertEquals("java.lang.NumberFormatException", e.toString().split(":")[0]);
-		}
-
 	}
 	
-	@Test
+	
+	@Test(expected=NumberFormatException.class)
 	public void testIsPowerOfFourInvalidInput() {
-
-		try {
-			assertEquals(
-					"Return invalid input", "Invalid Input", powerOfFour.isPowerOfFour("128a"));
-		} catch (Exception e) {
-			assertEquals("java.lang.NumberFormatException", e.toString().split(":")[0]);		}
-
-	}
-	
-	@Test
-	public void testIsPowerOfFourNullInput() {
-
-		try {
-			assertEquals(
-					"Return invalid input", "Invalid Input", powerOfFour.isPowerOfFour(null));
-		} catch (Exception e) {
-			assertEquals("java.lang.NumberFormatException", e.toString().split(":")[0]);
-		}
-
+		powerOfFour.isPowerOfFour(null);
 	}
     
 }

@@ -7,7 +7,7 @@ public class PowerOfFourChecker {
 
 	/*isPowerOfFour() function returns if the inputString is the power of four or not*/
 	
-	public boolean isPowerOfFour(String inputString) throws Exception{
+	public boolean isPowerOfFour(String inputString){
 		int num = Integer.parseInt(inputString);
 		while(num!=1) {
 			if(num%4 != 0) {
