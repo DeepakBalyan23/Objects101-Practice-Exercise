@@ -8,7 +8,7 @@ import org.junit.Test;
 
 /* Unit test for EvenNumTest
  */
-public class StudentMarksTester 
+public class StudentMarksTest 
 {
 	
 	private static StudentsGradesValidator studentsGradesValidator;
