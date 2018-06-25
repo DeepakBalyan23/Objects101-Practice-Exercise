@@ -29,7 +29,7 @@ public class ChessBoardPrinterTest
 	}
 	
 	@Test
-	public void testRemoveVowels() {
+	public void testPrintChessBoard() {
 		chessBoardPrinter.printChessBoard();
 	}
 	
