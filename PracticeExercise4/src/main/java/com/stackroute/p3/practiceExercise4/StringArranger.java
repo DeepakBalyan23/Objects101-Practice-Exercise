@@ -12,7 +12,7 @@ public class StringArranger {
 	
 	public String getalphabeticalOrder() {
 		String [] textArray = text.split(" ");
-		Arrays.sort(textArray);
+		Arrays.sort(textArray, String.CASE_INSENSITIVE_ORDER);
 		return Arrays.toString(textArray).replaceAll(",", "").replace("]", "").replace("[", "");
 	}
 }
