@@ -6,16 +6,16 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class CharacterReplacementTest 
+public class HarryWordCheckerTest 
 {
 	
-	private static CharacterReplacement characterReplacement;
+	private static HarryWordChecker harryWordChecker;
 
 	@BeforeClass
 	public static void setup() {
 		// This methods runs, before running any one of the test case
 		// This method is used to initialize the required variables
-		characterReplacement = new CharacterReplacement();
+		harryWordChecker = new HarryWordChecker();
 
 	}
 
@@ -23,12 +23,13 @@ public class CharacterReplacementTest
 	public static void teardown() {
 		// This method runs, after running all the test cases
 		// This method is used to clear the initialized variables
-		characterReplacement = null;
+		harryWordChecker = null;
 
 	}
 	
 	@Test
-	public void testReplaceCharacter() {
-		assertEquals("faity fry",characterReplacement.replaceCharacter("daily dry"));
+	public void testHarryWordChecker() {
+		assertTrue(harryWordChecker.isHarryPresent("This is Harry."));
+		assertFalse(harryWordChecker.isHarryPresent("This is Henry."));
 	}
 }

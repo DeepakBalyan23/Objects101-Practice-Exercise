@@ -28,7 +28,7 @@ public class StringTransposerTest
 	}
 	
 	@Test
-	public void testLongestSubstringChecker() {
+	public void testTransposeString() {
 		assertEquals("a kciuq nworb xof spmuj revo eht yzal god",stringTransposer.transposeString("a quick brown fox jumps over the lazy dog"));
 		
 	}

@@ -28,7 +28,7 @@ public class StringArrangerTest
 	}
 	
 	@Test
-	public void testLongestSubstringChecker() {
+	public void testGetalphabeticalOrder() {
 		stringArranger.setText("neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit");
 		assertEquals("adipisci amet consectetur dolor dolorem est ipsum neque porro qui quia quisquam sit velit",stringArranger.getalphabeticalOrder());
 		

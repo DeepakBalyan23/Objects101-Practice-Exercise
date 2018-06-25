@@ -28,7 +28,7 @@ public class OccurencesOfCharacterTest
 	}
 	
 	@Test
-	public void testLongestSubstringChecker() {
+	public void testGetOccurencesOfCharacter() {
 		assertEquals(13,occurencesOfCharacter.getOccurencesOfCharacter("abbccabababaaaabababacbabccbcbcba", 'b'));
 	}
 }
