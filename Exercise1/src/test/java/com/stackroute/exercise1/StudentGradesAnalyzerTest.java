@@ -6,10 +6,6 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-/**
- * Unit test for StudentGradesAnalyzer.
- */
-
 public class StudentGradesAnalyzerTest 
 {
 	
