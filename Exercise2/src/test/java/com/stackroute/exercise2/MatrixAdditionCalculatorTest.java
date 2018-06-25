@@ -29,21 +29,13 @@ public class MatrixAdditionCalculatorTest
 
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testGradeValidate() {
-		studentsGradesValidator.setNumberOfStudents(5);
-		assertTrue(studentsGradesValidator.gradesValidate(new int[] {20, 80, 50, 40, 80}));
-	}
-	
-	@Test(expected=java.lang.Error.class)
-	public void testGradeValidateInputMismatch() {
-		studentsGradesValidator.setNumberOfStudents(5);
-		studentsGradesValidator.gradesValidate(new int[] {20, 80, 50, 40});
-	}
-	
-	@Test(expected=java.lang.Error.class)
-	public void testGradeValidateInvalidGrade() {
-		studentsGradesValidator.setNumberOfStudents(5);
-		studentsGradesValidator.gradesValidate(new int[] {20, 80, 50, 40, 102});
+		matrixAdditionCalculator.setColumns(3);
+		matrixAdditionCalculator.setRows(3);
+		matrixAdditionCalculator.setMatrix1(new int[][] {{4,5,9},{2,10,5},{5,11,12}});
+		matrixAdditionCalculator.setMatrix2(new int[][] {{2,5,4},{22,44,5},{15,10,11}});
+		assertEquals(new int[][] {{6,10,13},{24,54,10},{20,21,23}}, matrixAdditionCalculator.matrixAddition());
 	}
 }

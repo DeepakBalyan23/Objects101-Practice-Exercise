@@ -32,7 +32,7 @@ public class MatrixAdditionCalculator {
 		this.matrix2 = matrix2;
 	}
 	
-	public int[][]matrixAddition(int[][] matrix1, int[][] matrix2){
+	public int[][]matrixAddition(){
 		int[][] sumMatrix = new int[rows][columns];
 		for(int i=0;i<rows;i++) {
 			for(int j=0;j<columns;j++) {
