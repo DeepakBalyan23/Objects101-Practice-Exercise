@@ -33,7 +33,7 @@ public class SetSorterTest
 	
 	@Test
 	public void testSortSet() {
-		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList("Alice", "Bluto", "Eugene", "Harry", "Olive"));
-		assertEquals(expectedList, setSorter.sortSet(new String[] {"Harry", "Olive", "Alice", "Bluto", "Eugene"}));
+		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList("alice", "Bluto", "Eugene", "Harry", "Olive"));
+		assertEquals(expectedList, setSorter.sortSet(new String[] {"Harry", "Olive", "alice", "Bluto", "Eugene"}));
 	}
 }
