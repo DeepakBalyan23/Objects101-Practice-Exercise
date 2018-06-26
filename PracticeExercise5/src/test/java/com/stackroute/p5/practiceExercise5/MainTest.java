@@ -32,7 +32,7 @@ public class MainTest
 	}
 	
 	@Test
-	public void testUpdateArray() {
+	public void testCompareFunction() {
 		Student s1 = new Student(5, "John", 25);
 		Student s2 = new Student(2, "Tom", 20);
 		Student s3 = new Student(1, "John", 25);
